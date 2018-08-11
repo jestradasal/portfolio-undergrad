@@ -1,0 +1,90 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+#header {
+    background-image: url(https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d39fe8df8ff9407562e2f89aec3c1318&auto=format&fit=crop&w=1350&q=80);
+    height: 18em;
+    background-size: cover;
+    background-position: center;
+}
+
+#header h1 {
+    text-align: center;
+    padding-top: 3em;
+    color: ghostwhite;
+    text-transform: lowercase;
+    margin: 0px;
+}
+
+
+nav ul {
+    display: inline-block;
+    margin: 0px;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: 'Oswald';
+    color: black;
+    padding: 20px 10px;
+    margin: 0px;
+}
+
+nav ul li:hover {
+    background-color: #A9A9A9;
+}
+
+#picture {
+    width: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+    
+}
+
+.container {
+    margin: 30px;
+}
+
+#picture-container {
+    text-align: center;
+}
+
+#text {
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+form {
+    width: 20%;
+    margin: 30px auto;
+}
+
+
+label {
+    margin: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    width: 100%;
+    margin: 20px;
+    
+}
+
+#resume {
+    border: 1px solid black;
+    margin: 20px;
+    text-align: center;
+}
+
+#resume p {
+    text-align: left;
+}
