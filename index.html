@@ -1,66 +1,90 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Judyth Estrada</title>
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>Judyth Estrada Salinas</title>
+    <meta name="author" content="Judyth Estrada">
+    <link rel="stylesheet" type="text/css" media="all" href="css/main.css">
+    <link rel=icon href="images/profile.jpg"/>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Staatliches" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+  </head>
 
-    </head>
-
-    <body>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href=projects.html>Projects</a></li>
-                <li><a href=#>Resume</a></li>
-                <li><a href=contact.html>Contact Me</a></li>
-            </ul>
+  <body>
+    <div id=wrapper>
+      <div id=content>
+        <nav id="sticky-nav">
+          <ul id=nav>
+            <li><a href=#topbar>Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+          </ul>
         </nav>
 
-        <div id=header>
-            <h1>Judyth Estrada</h1>
-        </div>
+        <section id=topbar class=section>
+          <img src="images/profile.jpg"/>
+          <h1>Judyth Estrada Salinas</h1>
+          <p>student and aspiring software engineer</p>
+        </section>
 
-        <main class=container>
-            <div class='row'>
-                <div id=picture-container class="col-sm-12 col-md-6 col-lg-6">
-                    <img id=picture src=36307088_1767590989995250_1043558146758410240_n.jpg>
-                </div>
-                <div id="text" class="col-sm-12 col-md-6 col-lg-6">
-                    <h3>Hi! I'm Judyth. I'm a junior at Duke University pursuing an interdepartmental major between Computer Science and Sociology.</h3>
-                </div>
+        <section id=about class=section>
+          <div class=section-content>
+          <h2 class=section-title>About Me</h2>
+          <p>My technical interests include web development, machine learning and databases. I have had internships and other experiences where I have been able to explore these interests.
+            Although I am now an interdepartmental major, I am still interested in working in full technical roles after graduation.
+          </p>
+          <p> The other side of my interests include social justice, inequities existent within our society as well as different ways that technology can alleviate them. I first became
+             interested in the humanistic side of tech when I read an article on the use of algorithms to decide sentencing, and how these algorithms would disproportionately affect
+              people of color. Although these areas are wide, one field that I am most interested in is inequity in education and how technology can be harnessed to help fix it.
+          </p>
+          <p>One of the ways that I am exploring this is through my Bass Connections team this year - CSbyUs. Founded by three undergraduate Duke students, we develop a Computer Science
+            curriculum, teach it at various Durham middle schools and develop an open-source friendly web platform for teachers, students and others to use freely. The team believes that
+            Computer Science education is an effective way to benefit disadvantaged students.</p>
+          <p>Other areas that interest me include the medical field and its intersection with sociology and technology. Some of my favorite books include Survival of the Sickest, The Hate U Give
+            and Being Mortal.</p>
+            <img src=images/raisedfist.png alt="raised fist"/>
+          </div>
+        </section>
 
-                <div id=main-body>
-                  <p>My technical interests include web development, machine learning and databases. I have had internships and other experiences where I have been able to explore these interests.
-                    Although I am now an interdepartmental major, I am still interested in working in full technical roles after graduation.
-                  </p>
-                  <p> The other side of my interests include social justice, inequities existent within our society as well as different ways that technology can alleviate them. I first became
-                    interested in the humanistic side of tech when I read an article on the use of algorithms to decide sentencing, and how these algorithms would disproportionately affect
-                    people of color. Although these areas are wide, one field that I am most interested in is inequity in education and how technology can be harnessed to help fix it.
-                  </p>
-                  <p>One of the ways that I am exploring this is through my Bass Connections team this year - CSbyUs. Founded by three undergraduate Duke students, we develop a Computer Science
-                  curriculum, teach it at various Durham middle schools and develop an open-source friendly web platform for teachers, students and others to use freely. The team believes that
-                  Computer Science education is an effective way to benefit disadvantaged students.</p>
-                  <p>Other areas that interest me include the medical field and its intersection with sociology and technology. Some of my favorite books include Survival of the Sickest, The Hate U Give
-                  and Being Mortal.</p>
-                </div>
-            </div>
+        <section id=resume class=section>
+          <div class=section-content>
+            <img src='images/resume.png' alt="Resume"/>
+          </div>
+        </section>
+
+        <section id=projects class=section>
+          <div class=section-content>
+            <h2 class=section-title>Projects</h2>
+            <article class=single-project>
+            <h3>SAT Scores in North Carolina</h3>
+            <ul>
+              <li>Analysis of standardized SAT scores in North Carolina against various demographic variables
+              (race, household income, % on reduced/free lunch, etc.).</li>
+              <li>SAT data was pulled from online and converted into Postgres SQL database, from where
+                training and testing data was obtained.</li>
+              <li>Predicting algorithms were coded in Python and based on multivariable linear regression. Our results
+                found that there was some association between certain variables and the scores.</li>
+              <li>Results were also visualized using JavaScript and can be seen <a href="">here</a>.</li>
+            </article>
+            <article class=single-project>
+            </article>
+          </div>
+        </section>
+
+        <section id=hobbies class=section>
+          <h2 class=section-title>Hobbies</h2>
+        </section>
+      </div>
+    </div>
+  </body>
 
 
-        </main>
 
 
 
-
-
-
-
-
-
-
-    </body>
 
 </html>
